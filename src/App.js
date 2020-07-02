@@ -25,14 +25,61 @@ import './App.css';
     </div>
   );
 }*/
-
+class Content extends Component {
+  render() {
+    return (
+      <article>
+        <h2>HTML</h2>
+        HTML is HyperText Markup Language.
+      </article>
+    );
+  }
+}
+class TOC extends Component {
+  render() {
+    return (
+      <nav>
+        <ul>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ul>
+      </nav>
+    );
+  }
+}
+class Chater extends Component {
+  render() {
+    return (
+      <dl>
+        <dt>안녕하세요ㅎㅎ</dt>
+        <dt>반갑습니다 ㅎㅎ</dt>
+        <dt>퇴근하겠습니다 ㅎㅎ</dt>
+      </dl>
+    );
+  }
+}
+class Subject extends Component {
+  render() {
+    return (
+      <header>
+          <h1>WEB</h1>
+          world wide web!  
+      </header>
+    );
+  }
+} 
 class App extends Component {
   render() {
     return(
     <div className="App">
-        Hellow , React!!!!
+        <Subject title ="WEB" sub="title"></Subject>
+        <TOC></TOC>
+        <Content></Content>
+        <Chater></Chater>
     </div>
     );
   }
 }
+
 export default App;
