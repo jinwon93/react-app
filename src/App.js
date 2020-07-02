@@ -1,8 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
+// function 방식
+// import React from 'react';
+// import logo from './logo.svg';
+// class 방식으로 수업 !
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +24,15 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
+class App extends Component {
+  render() {
+    return(
+    <div className="App">
+        Hellow , React!!!!
+    </div>
+    );
+  }
+}
 export default App;
