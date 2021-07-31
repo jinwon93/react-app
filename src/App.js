@@ -12,7 +12,7 @@ import './App.css';
  
 class App extends Component {
   //  Component 안에서 constructor가 있다면 제일 먼저 실행된다 -->이유는
-  // state 값을 초기화 시킨다 ex) 밑에 예제를 보면 title/sub 값을 세팅하려고
+  // state 값을 초기화 시킨다 ex) 밑에 예제를 보면 title/sub 값을 세팅하려고!!!!
   constructor(props){
     super(props);
     this.max_content_id = 3;
